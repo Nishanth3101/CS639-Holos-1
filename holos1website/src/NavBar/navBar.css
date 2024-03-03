@@ -12,6 +12,8 @@
 }
 
 .nav-item {
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin: 1rem;
   justify-content: center;
   align-items: center;
