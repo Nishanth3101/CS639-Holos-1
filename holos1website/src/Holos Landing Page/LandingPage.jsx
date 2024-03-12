@@ -11,7 +11,7 @@ function LandingPage() {
       </header>
       <div className="landing-body">
         We're developing a Unity demo for the company
-        <a href="https://holos.com" className="link">
+        <a href="https://holos.io/" className="link">
           {" "}
           Holos
         </a>
