@@ -3,14 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 15rem;
-  height: 15rem;
+  width: calc(24.333% - 1rem); 
+  height: auto; 
   background-color: #f0f0f0;
   border: 1px solid black;
   border-radius: 1rem;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
-  padding: 3rem;
-  margin: 1rem;
+  padding: 1rem; 
+  margin: 1rem;  
 }
 
 .card-title {
