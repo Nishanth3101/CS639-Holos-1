@@ -11,3 +11,8 @@
 - After 18th March: Collaborated closely with Saksham Jain to finalize the deployment of our application to the Meta Quest 3. A key achievement during this period was the implementation of a draggable model feature, which enhanced user interaction within our virtual environment. Conducted comprehensive testing with Saksham Jain to ensure the seamless functionality and user experience of our application on the Meta Quest 3.
 - From April 8 Onwards: Focused on the expansion of 3D models within our project, adding more depth and variety to our virtual environment.
 Initiated the integration of external GPT capabilities into our project, aiming to enhance the interactive experience through advanced AI-driven interactions.
+
+## Jordan Alper
+- Before March 18th: Created models for the hospital room scene, most notable model is heart monitor. Applied textures to models and exported them to unity files.
+- After March 18th: Worked on 3D room created by Saksham and Weibing to get interactable skeleton to work. Experimented with virtual hands, as well as different methods. Eventually, my teammates switched to a different VR method, away from XR to OXR. Continuously tested functionality to test if it was working correctly.
+- From April 8th: Focusing on implementing talking function and integrating OpenAI into that.
