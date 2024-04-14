@@ -3,8 +3,8 @@
 ## Saksham Jain
 
 - Before 18th March: Have been working on the Unity project creating the scene. Took models created by Jordan and Nishanth for the scene. Worked with Weibing to test it before the demo.
-- After 18th March to April 8: Have been working on getting the Grab objets working. Initially used XR Integration Toolkit to implement but that did not work. Worked through and tried a lot of different methods before pivoting to Oculus Integration SDK and finally using Meta Integration SDK. Implemented Controller and Hand Grab on new Skeleton Model.
-- From April 8: Going to work on packaging Hand Grabbable and AI.
+- After 18th March to April 8: Have been working on getting the Grab objets working. Asked the other team for any help and got a resource from Nishanth being used by the other team. Used the provided XR Integration Toolkit to implement but that did not work. Worked through a lot of youtube tutorials and tried a lot of different methods before pivoting to Oculus Integration SDK and finally using Meta Integration SDK. Needed to buy a new Skeleton Model from the Unity Asset Store and implemented Controller and Hand Grab on new Skeleton Model.
+- From April 8 - 14: Successfully implemented Hand Grab which wasn't working after packaging the app for Meta Quest.
 
 ## Weibing Wang
 - Before 18th March: Focused primarily on completing and supplementing our project's website and its deployment. Worked alongside Saksham Jain on modifying and deploying our Unity project to the Meta Quest 3, contributing significantly to both the development and operational phases.
