@@ -1,0 +1,12 @@
+{
+    "use_batch_mode": true,
+    "__comment": "remove the prefix __ to enable log_location",
+    "//disable_compositor": true,
+    "log_location": "c:/tmp/meta_xrsim.log",
+    "log_level": "verbose",
+	"scene_anchor_data": "anchors/scene_anchors_empty_room.json",
+	"app_anchor_data": "anchors/app_anchors.json",
+    "telemetry": {
+        "disable": true
+    }
+}
