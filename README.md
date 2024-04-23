@@ -1,4 +1,23 @@
-A readme for Holos team 1 for CS639 repository
+# A readme for Holos team 1 repository for CS639
+
+#### Start with downloading the Unity project.
+
+##### Test in VR through Unity
+For more detailed instructions you may follow the steps here https://learn.unity.com/tutorial/vr-project-setup#65c511fbedbc2a263ed98728.
+1.  Install the OpenXR Plugin for desktop testing:
+From the top menu, select Edit > Project Settings, then select the XR Plug-in Management panel from the sidebar.
+In the Windows, Mac, Linux tab, select OpenXR from the list of available Plug-in Providers to install that plug-in.
+2.  Resolve any warnings by setting up an interaction profile.
+After adding the OpenXR plugin, there may be a warning or error icon that appears next to the plugin Name. 
+If there is a warning, click on the warning icon to open the OpenXR Project Validation window, which will tell you that you need to add an interaction profile for the device you’re using. 
+Select the Edit button to open the OpenXR settings panel.
+In the Windows, Mac, Linux tab, make sure the Oculus Touch Controller Profile appears in the list of Interaction Profiles, then enable all available OpenXR Feature Groups. 
+There should no longer be any warnings in the XR Plugin Management panel. If there are, select them and follow the recommended steps to resolve them.
+3.  Connect your device through the Quest Link Software: 
+Make sure your device is plugged into your computer using a compatible cable. 
+Make sure the Quest App is running and has successfully recognized your device.
+4.  Test the project on your device:
+Select Play in the Unity Editor and put on your headset
 
 <strong>Instructions for connecting to ChatGPT: Make sure you have an OpenAI account.</strong>
 
