@@ -1,104 +1,153 @@
-.landing-header {
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
-    padding-top: 5rem;
-    color: #333;
-    background-color: #f0f0f0;
+.forum-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 4rem;
+  color: #333;
+  background-color: #f0f0f0;
+  margin-bottom: 2rem;
+}
+
+.forum-content {
+  font-size: 1rem;
+  text-align: justify;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 2rem auto;
+  max-width: 800px;
+  line-height: 1.8;
+}
+
+.post-section {
+  margin-bottom: 1.5rem;
+}
+
+.post-button, .submit-post-button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.post-button:hover, .submit-post-button:hover {
+  background-color: #0056b3;
+  text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.pagination-item {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination-item:hover, .pagination-item.active {
+  background-color: #0056b3;
+}
+
+.link {
+  text-decoration: none;
+  color: #5a58c1;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: #3a38b1;
+  text-decoration: underline;
+}
+
+/* 适应性布局调整 */
+@media (max-width: 768px) {
+  .forum-content {
+    padding: 1rem;
+    margin: 1rem auto;
   }
-  
-  .landing-body {
-    font-size: 1rem;
-    text-align: justify;
-    padding: 3rem;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin: 3rem auto; 
-    max-width: 800px;
-    line-height: 1.8; 
+}
+/* 增强特异性 */
+div.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 !important; /* 增加更多的上下padding以减少拥挤 */
+  flex-wrap: wrap !important; /* 允许项在必要时换行 */
+}
+
+div.pagination .pagination-item {
+  margin: 0 20px !important; /* 增加左右间距，使按钮不那么拥挤 */
+  padding: 15px 25px !important; /* 增加内边距，使按钮更容易点击 */
+  background-color: #007bff !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  font-size: 18px !important; /* 增加字体大小，提高可读性 */
+}
+
+div.pagination .pagination-item:hover, div.pagination .pagination-item.active {
+  background-color: #0056b3 !important;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start; /* 使帖子从行的开始处对齐 */
+}
+
+.col {
+  flex: 0 0 20%; /* 每个帖子占行宽的20%，以适应5列布局 */
+  max-width: 20%; /* 防止列宽超过20% */
+  height: 300px; /* 设置固定高度 */
+  margin-bottom: 20px; /* 添加一些底部间距 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forum-message {
+  width: 90%; /* 卡片宽度稍小于列宽 */
+  height: 90%; /* 卡片高度稍小于列高 */
+  background-color: #fff; /* 背景色 */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 添加阴影 */
+  padding: 10px;
+  overflow: hidden; /* 防止内容溢出 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .col {
+    flex: 0 0 33.333333%; /* 在较小的屏幕上调整为每排3个 */
+    max-width: 33.333333%;
   }
-  
-  .landing-image {
-    max-width: 45%;
-    height: auto;
-    display: block;
-    margin: 1rem;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .col {
+    flex: 0 0 50%; /* 在更小的屏幕上调整为每排2个 */
+    max-width: 50%;
   }
-  
-  .link {
-    text-decoration: none;
-    color: #5a58c1;
-    font-weight: 500;
-    &:hover {
-      color: #3a38b1;
-      text-decoration: underline;
-    }
+}
+
+@media (max-width: 576px) {
+  .col {
+    flex: 0 0 100%; /* 在最小的屏幕上调整为每排1个 */
+    max-width: 100%;
   }
-  
-  p {
-    margin-top: 1rem;
-    line-height: 1.6;
-    color: #666;
-    text-indent: 2em; 
-  }
-  
-  @keyframes glow {
-    0%, 100% {
-      text-shadow: 0 0 5px #9e9e9e, 0 0 10px #e6e6e6;
-      background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-    }
-    50% {
-      text-shadow: 0 0 10px #1016cb, 0 0 20px #cccccc;
-      background-image: linear-gradient(45deg, #f665c3 0%, #fda085 99%, #f6d365 100%);
-    }
-  }
-  
-  .glow {
-    animation: glow 3s ease-in-out infinite alternate;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    display: inline-block;
-  }
-  
-  @supports (-webkit-background-clip: text) or (background-clip: text) {
-    .glow {
-      -webkit-text-fill-color: transparent;
-    }
-  }
-  
-  .landing-image.loaded {
-    opacity: 1;
-  }
-  
-  .left {
-    float: left;
-    margin-right: 1rem; 
-  }
-  
-  .right {
-    float: right;
-    margin-left: 1rem;
-  }
-  
-  
-  .landing-body::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  @media (max-width: 768px) {
-    .landing-image {
-      max-width: 100%;
-      float: none;
-      margin: 0 auto 1rem;
-    }
-  
-    .left, .right {
-      float: none;
-    }
-  }
+}

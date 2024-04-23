@@ -9,7 +9,8 @@ function NavBar() {
           <Nav.Link className="nav-item" href="/">Home</Nav.Link>
           <Nav.Link className="nav-item" href="/aboutus">About Us</Nav.Link>
           <Nav.Link className="nav-item" href="/demopage">Demo</Nav.Link>
-          <Nav.Link className="nav-item" href="/quiz">Quiz</Nav.Link> 
+          <Nav.Link className="nav-item" href="/quiz">Quiz</Nav.Link>
+          <Nav.Link className="nav-item" href="/forum">Forum</Nav.Link> 
         </Nav>
       </Container>
     </Navbar>
