@@ -19,8 +19,15 @@ Initiated the integration of external GPT capabilities into our project, aiming 
 - Before March 18th: Created models for the hospital room scene, most notable model is heart monitor. Applied textures to models and exported them to unity files.
 - After March 18th: Worked on 3D room created by Saksham and Weibing to get interactable skeleton to work. Experimented with virtual hands, as well as different methods. Eventually, my teammates switched to a different VR method, away from XR to OXR. Continuously tested functionality to test if it was working correctly.
 - From April 8th: Focusing on implementing talking function and integrating OpenAI into that.
+- Implemented voice recognition and combined it with Nishanth's OpenAI request to get a response from AI.
+- Implemented text-to-speech functionality (working out bugs still) that will automatically take AI response and use whisperGPT to convert the text response to an audio file. This audio clip then automatically gets played.
 
 ## Nishanth Naik
 - Before March 18th: Focused primarily on what models we could use for our Unity project. Worked with Saksham to explore models and scenes. Worked on splitting of the models to make them their own individual parts. Tested with Saksham on how it would look in our enviornment.
 - After 18th March: Finding resources and reading packages to figure out the best way to Grab objects. Provided Saksham with the resources on which package to use to try to have the objects being Grabbable.
 -From April 8th going to start working on the backend to get prompts and questions up to enhance the learning experience and interactivity.
+
+## Yuyang Liu
+- Before March 18: Modeled the ward scene, created a basic hospital low profile and hospital exterior scene build and exported it as a unity file. Used the model created by Jordan and Nishanth for the scene.
+- After March 18th Continued to modify the hospital floor plan model, but confirmed through communication to focus on an initial interactive room to complete the interaction between the models. Continued to test for functionality. Learned how to capture from YouTube and reviewed resource packs that needed to be prepared.
+- Starting April 8: Focused on expanding the website functionality in the project with Weibin to add variety and comprehensiveness to the virtual environment learning. The focus will be on designing and developing quizzes, organizing them, and uploading them on your own. There are also student communication platforms for each topic category, which have been created to create a more helpful and immersive learning experience.
