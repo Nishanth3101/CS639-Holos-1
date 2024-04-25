@@ -16,6 +16,8 @@ Initiated the integration of external GPT capabilities into our project, aiming 
 - Before March 18th: Created models for the hospital room scene, most notable model is heart monitor. Applied textures to models and exported them to unity files.
 - After March 18th: Worked on 3D room created by Saksham and Weibing to get interactable skeleton to work. Experimented with virtual hands, as well as different methods. Eventually, my teammates switched to a different VR method, away from XR to OXR. Continuously tested functionality to test if it was working correctly.
 - From April 8th: Focusing on implementing talking function and integrating OpenAI into that.
+- Implemented voice recognition and combined it with Nishanth's OpenAI request to get a response from AI.
+- Implemented text-to-speech functionality (working out bugs still) that will automatically take AI response and use whisperGPT to convert the text response to an audio file. This audio clip then automatically gets played.
 
 ## Nishanth Naik
 - Before March 18th: Focused primarily on what models we could use for our Unity project. Worked with Saksham to explore models and scenes. Worked on splitting of the models to make them their own individual parts. Tested with Saksham on how it would look in our enviornment.
