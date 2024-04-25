@@ -25,6 +25,6 @@ Initiated the integration of external GPT capabilities into our project, aiming 
 -From April 8th going to start working on the backend to get prompts and questions up to enhance the learning experience and interactivity.
 
 ## Yuyang Liu
-- By March 18: Modeled the ward scene, created a basic hospital low profile and hospital exterior scene build and exported it as a unity file. Used the model created by Jordan and Nishanth for the scene.
+- Before March 18: Modeled the ward scene, created a basic hospital low profile and hospital exterior scene build and exported it as a unity file. Used the model created by Jordan and Nishanth for the scene.
 - After March 18th Continued to modify the hospital floor plan model, but confirmed through communication to focus on an initial interactive room to complete the interaction between the models. Continued to test for functionality. Learned how to capture from YouTube and reviewed resource packs that needed to be prepared.
 - Starting April 8: Focused on expanding the website functionality in the project with Weibin to add variety and comprehensiveness to the virtual environment learning. The focus will be on designing and developing quizzes, organizing them, and uploading them on your own. There are also student communication platforms for each topic category, which have been created to create a more helpful and immersive learning experience.
