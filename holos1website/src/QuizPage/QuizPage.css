@@ -1,77 +1,59 @@
-.quiz-header {
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: center;
-  padding-top: 5rem;
+.content-container {
+  padding-top: 80px; 
 }
 
-.quiz-content p, .quiz-content a, .score-display {
-  text-align: center;
-  display: block;
-}
-
-.question-section {
-  margin-bottom: 2rem;
-  text-align: center; 
-}
-
-.answer-button {
-  display: inline-block;
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  width: 200px;
-  text-align: center; 
-}
-
-.answer-button:hover, .answer-button.selected {
-  background-color: purple; 
-  text-decoration: underline;
-}
-
-.submit-button {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.score-modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  color: black;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  z-index: 1000;
+.question-bank, .basic-quizzes {
   width: 80%;
-  max-width: 400px;
+  margin: 60px auto; 
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
 }
 
-.close-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 5px 10px;
-  background-color: #dc3545;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.basic-quizzes h1 {
+  text-align: center;
+  font-size: 1.5em; 
+  margin-bottom: 20px; 
 }
 
-.close-button:hover {
-  background-color: #c82333;
+
+.basic-quizzes-container {
+  display: flex;
+  justify-content: space-around; 
+}
+
+.basic-quiz {
+  width: 22%;
+  height: 150px; 
+  background-color: #5555FF; 
+  color: white; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px; 
+  border-radius: 8px;
+}
+
+.quiz-title {
+  text-align: center;
+  font-size: 1em; 
+}
+
+.quiz-content-button {
+  /* button style */
+}
+
+
+@media (max-width: 767px) {
+  .basic-quiz {
+    width: 45%; 
+    margin: 5px;
+    height: 100px; 
+  }
+
+  .question-bank, .basic-quizzes {
+    width: 95%; 
+    margin: 20px auto; 
+  }
 }
