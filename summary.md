@@ -8,6 +8,7 @@
 - Implemented a reset button to move the bones back to their initial state by just clicking one button.
 - Implemented a speech-to-text functionality using WhisperGPT and used ChatGPTManager made by Nishanth to send API request to ChatGPT. Jordan also worked on this but was encountering bugs so started side-by-side but he was able to fix the bugs!
 - Created a Canvas to display the user question and the ChatGPT response in front of the user.
+- Implemented a text-to-speech functionality as well (as a backup to Jordan's implementation) that doesn't use OpenAI and instead uses the Meta SDK. Also added functionality to pause, resume, and stop the voice.
 
 ## Weibing Wang
 - Before 18th March: Focused primarily on completing and supplementing our project's website and its deployment. Worked alongside Saksham Jain on modifying and deploying our Unity project to the Meta Quest 3, contributing significantly to both the development and operational phases.
