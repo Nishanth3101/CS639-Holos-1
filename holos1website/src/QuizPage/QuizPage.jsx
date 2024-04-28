@@ -1,19 +1,24 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './QuizPage.css';
 import Navbar from '../NavBar/NavBar';
 
-// QuestionBank subset
 const QuestionBank = () => {
+  let navigate = useNavigate();
+
+  const navigateToQuizDashboard = () => {
+    navigate("/quiz-dashboard");
+  };
+
   return (
     <div className="question-bank">
       <h1>Question Bank</h1>
       <p>This is the question bank where all questions can be stored and managed.</p>
-      <button className="quiz-content-button">View Problem Library</button>
+      <button onClick={navigateToQuizDashboard} className="quiz-content-button">View Problem Library</button>
     </div>
   );
 };
 
-// Single BasicQuiz part
 const BasicQuiz = ({ title }) => {
   return (
     <div className="basic-quiz">
@@ -22,8 +27,6 @@ const BasicQuiz = ({ title }) => {
   );
 };
 
-
-// BasicQuizzes subset
 const BasicQuizzes = () => {
   const quizTitles = ['Bones', 'Skeletal and Muscular System', 'Terminology', 'One More'];
   return (
@@ -37,7 +40,6 @@ const BasicQuizzes = () => {
     </div>
   );
 };
-
 
 function QuizPage() {
   return (
