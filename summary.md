@@ -9,6 +9,9 @@
 - Implemented a speech-to-text functionality using WhisperGPT and used ChatGPTManager made by Nishanth to send API request to ChatGPT. Jordan also worked on this but was encountering bugs so started side-by-side but he was able to fix the bugs!
 - Created a Canvas to display the user question and the ChatGPT response in front of the user.
 - Implemented a text-to-speech functionality as well (as a backup to Jordan's implementation) that doesn't use OpenAI and instead uses the Meta SDK. Also added functionality to pause, resume, and stop the voice.
+- Implemented the POST request to our discussion forum on our website with Jordan and Weibing. User can speak their post in the VR and then we run Speech-to-text and send a POST request.
+- Looked at the possibility of implementing lip sync in the skeleton jaw.
+- Debugged the build on the Meta Quest not working for OpenAI.
 
 ## Weibing Wang
 - Before 18th March: Focused primarily on completing and supplementing our project's website and its deployment. Worked alongside Saksham Jain on modifying and deploying our Unity project to the Meta Quest 3, contributing significantly to both the development and operational phases.
