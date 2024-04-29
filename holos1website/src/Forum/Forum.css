@@ -55,11 +55,31 @@
 }
 .form-control-content {
   width: 100%;
-  height: 50px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: none;
+  height: 100px; /* 增加高度以便于输入更多内容 */
+  padding: 15px; /* 增加内边距 */
+  border: 2px solid #ccc; /* 加粗边框 */
+  border-radius: 8px; /* 圆角边框 */
+  resize: vertical; /* 允许垂直调整大小 */
+  font-size: 1rem; /* 字体大小 */
+  line-height: 1.5; /* 行高 */
+  transition: border-color 0.3s ease-in-out; /* 过渡效果 */
+}
+
+.form-control-content:focus {
+  border-color: #5555ff; /* 聚焦时边框颜色变化 */
+  box-shadow: 0 0 8px rgba(85, 85, 255, 0.5); /* 添加聚焦时的阴影效果 */
+}
+
+.reply-button {
+  width: auto; /* 自动宽度 */
+  padding: 8px 16px; /* 增加内边距 */
+  font-size: 0.9rem; /* 调整字体大小 */
+  transition: background-color 0.3s, color 0.3s; /* 添加颜色变化的过渡效果 */
+}
+
+.reply-button:hover {
+  background-color: #3333ff; /* 鼠标悬停时的背景颜色 */
+  color: #fff; /* 鼠标悬停时的文字颜色 */
 }
 
 .submit-post-button {
@@ -139,7 +159,34 @@
   justify-content: center;
   align-items: center;
 }
+.reply-card {
+  background-color: #f8f9fa; /* 浅灰色背景，提升阅读体验 */
+  border: 1px solid #dee2e6; /* 浅灰色边框 */
+  border-radius: 8px; /* 圆角边框 */
+  padding: 15px; /* 增加内边距 */
+  margin-top: 10px; /* 与其他回复之间的间距 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 轻微的阴影，增加层次感 */
+  transition: background-color 0.3s ease-in-out; /* 背景色变化的过渡效果 */
+  width: 90%; /* 调整宽度为容器的90% */
+  max-width: 800px; /* 最大宽度限制 */
+  min-width: 300px; /* 最小宽度限制 */
+}
 
+.reply-card:hover {
+  background-color: #e2e6ea; /* 鼠标悬停时变为更深的灰色 */
+}
+
+.reply-content {
+  font-size: 0.9rem; /* 设置字体大小 */
+  line-height: 1.4; /* 设置行高 */
+  color: #495057; /* 深灰色字体，提高可读性 */
+}
+
+.reply-author {
+  font-weight: bold; /* 作者名加粗 */
+  color: #007bff; /* 使用品牌蓝色突出作者名 */
+  margin-bottom: 5px; /* 与回复内容之间的间距 */
+}
 @media (max-width: 768px) {
   .forum-content,
   .post-card {

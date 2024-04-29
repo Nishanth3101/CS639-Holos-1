@@ -104,17 +104,7 @@ export default function Forum() {
         if (data.Operation === "UPDATE" && data.Message === "Success") {
           alert("Reply posted successfully!");
           toggleReply(post); // 关闭回复框
-          const updatedPosts = posts.map((p) => {
-            if (p.messageid === post.messageid) {
-              return {
-                ...p,
-                replyCount: p.replyCount + 1, // 更新回复数量
-                replies: [...p.replies, { content: post.replyContent }], // 假设你可以这样更新回复列表
-              };
-            }
-            return p;
-          });
-          setPosts(updatedPosts); // 更新帖子列表
+          loadPosts(); // 重新加载帖子
         } else {
           alert("Failed to post reply.");
         }
@@ -183,13 +173,14 @@ export default function Forum() {
                       Replies ({post.replyCount || 0})
                     </Button>
                     {post.showReplies &&
-                      post.replies.map((reply, index) => (
-                        <Card key={index} className="mt-2">
-                          <Card.Body>
-                            <Card.Text>{reply.content}</Card.Text>
-                          </Card.Body>
-                        </Card>
-                      ))}
+  post.replies.map((reply, index) => (
+    <Card key={index} className="mt-2 reply-card"> 
+      <Card.Body>
+        <Card.Text className="reply-content">{reply.content}</Card.Text> 
+      </Card.Body>
+    </Card>
+  ))
+}
                     {post.isReplying && (
                       <Form.Group>
                         <Form.Control
