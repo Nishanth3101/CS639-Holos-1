@@ -1,153 +1,153 @@
 .forum-header {
   font-size: 2.5rem;
   font-weight: 700;
-  text-align: center;
-  padding-top: 4rem;
   color: #333;
   background-color: #f0f0f0;
+  text-align: center;
+  padding-top: 4rem;
   margin-bottom: 2rem;
 }
 
 .forum-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  background-color: #fff;
   text-align: justify;
   padding: 2rem;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   margin: 2rem auto;
   max-width: 800px;
-  line-height: 1.8;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.title-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
 }
 
-.post-section {
-  margin-bottom: 1.5rem;
+.content-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
 }
 
-.post-button, .submit-post-button {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: #007bff;
+.form-control-title {
+  width: 100%;
+  height: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+.form-control-content {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+.submit-post-button {
+  width: 15%;
+  height: 30px;
+  background-color: #5555ff;
   color: white;
-  border: none;
-  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 8px;
   cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
+}
+.submit-post-button:hover {
+  background-color: #3333ff;
+  transition: ease-in-out 0.3s;
 }
 
-.post-button:hover, .submit-post-button:hover {
-  background-color: #0056b3;
-  text-decoration: underline;
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.reply-button {
+  width: fit-content;
+  height: fit-content;
+  background-color: #5555ff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reply-button:hover {
+  background-color: #3333ff;
+  transition: ease-in-out 0.3s;
 }
 
 .pagination {
   display: flex;
   justify-content: center;
   padding: 20px 0;
+  gap: 1rem;
 }
 
 .pagination-item {
-  margin: 0 5px;
   padding: 5px 10px;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin: 5px;
 }
 
-.pagination-item:hover, .pagination-item.active {
+.pagination-item:hover,
+.pagination-item.active {
   background-color: #0056b3;
+  transition: ease-in-out 0.3s;
 }
 
-.link {
-  text-decoration: none;
-  color: #5a58c1;
-  font-weight: 500;
-}
-
-.link:hover {
-  color: #3a38b1;
-  text-decoration: underline;
-}
-
-/* 适应性布局调整 */
-@media (max-width: 768px) {
-  .forum-content {
-    padding: 1rem;
-    margin: 1rem auto;
-  }
-}
-/* 增强特异性 */
-div.pagination {
+.post-card {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   display: flex;
-  justify-content: center;
-  padding: 40px 0 !important; /* 增加更多的上下padding以减少拥挤 */
-  flex-wrap: wrap !important; /* 允许项在必要时换行 */
-}
-
-div.pagination .pagination-item {
-  margin: 0 20px !important; /* 增加左右间距，使按钮不那么拥挤 */
-  padding: 15px 25px !important; /* 增加内边距，使按钮更容易点击 */
-  background-color: #007bff !important;
-  color: white !important;
-  border: none !important;
-  border-radius: 5px !important;
-  cursor: pointer !important;
-  font-size: 18px !important; /* 增加字体大小，提高可读性 */
-}
-
-div.pagination .pagination-item:hover, div.pagination .pagination-item.active {
-  background-color: #0056b3 !important;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start; /* 使帖子从行的开始处对齐 */
-}
-
-.col {
-  flex: 0 0 20%; /* 每个帖子占行宽的20%，以适应5列布局 */
-  max-width: 20%; /* 防止列宽超过20% */
-  height: 300px; /* 设置固定高度 */
-  margin-bottom: 20px; /* 添加一些底部间距 */
-  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.forum-message {
-  width: 90%; /* 卡片宽度稍小于列宽 */
-  height: 90%; /* 卡片高度稍小于列高 */
-  background-color: #fff; /* 背景色 */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 添加阴影 */
-  padding: 10px;
-  overflow: hidden; /* 防止内容溢出 */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-@media (max-width: 1200px) {
-  .col {
-    flex: 0 0 33.333333%; /* 在较小的屏幕上调整为每排3个 */
-    max-width: 33.333333%;
-  }
-}
-
 @media (max-width: 768px) {
-  .col {
-    flex: 0 0 50%; /* 在更小的屏幕上调整为每排2个 */
-    max-width: 50%;
+  .forum-content,
+  .post-card {
+    padding: 1rem;
+    margin: 1rem auto;
   }
-}
 
-@media (max-width: 576px) {
   .col {
-    flex: 0 0 100%; /* 在最小的屏幕上调整为每排1个 */
-    max-width: 100%;
+    width: 100%;
   }
 }
