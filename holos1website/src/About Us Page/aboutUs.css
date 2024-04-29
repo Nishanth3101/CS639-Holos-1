@@ -9,9 +9,7 @@
 .team-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 2rem;
+  justify-content: space-evenly;
   padding: 0 2rem;
 }
 
@@ -22,7 +20,7 @@
   width: 300px; /* Adjust based on your layout */
   text-align: center;
   padding: 2rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
