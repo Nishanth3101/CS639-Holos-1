@@ -13,7 +13,7 @@ function AboutUs() {
       <NavBar />
       <header className="about-header">We're more than just a student team. We've got goals, hopes, and dreams, just like you...</header>
       <div className="team-container">
-        <Card name="Nishanth Naik" description="Description Here" image={NishanthImage} />
+        <Card name="Nishanth Naik" description="Hi! My name is Nishanth Naik and I am a senior at UW-Madison. I enjoy gaming and I find VR games quite interesting so a VR project was very cool to work with as it was my first time using the Unity software." image={NishanthImage} />
         <Card name="Saksham Jain" description="Description Here" image={SakshamImage} />
         <Card name="Weibing Wang" description="Description Here" image={WeibingImage} />
         <Card name="Yuyang Liu" description="I'm a senior at the University of Wisconsin-Madison, and through VR, I explore new possibilities, and it's a good idea to make learning and entertainment come alive!" image={YuyangImage} />
