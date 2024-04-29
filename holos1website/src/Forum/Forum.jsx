@@ -91,7 +91,17 @@ export default function Forum() {
             if (data.Operation === "UPDATE" && data.Message === "Success") {
                 alert("Reply posted successfully!");
                 toggleReply(post);  // 关闭回复框
-                loadPosts();  // 重新加载帖子
+                const updatedPosts = posts.map(p => {
+                    if (p.messageid === post.messageid) {
+                        return {
+                            ...p,
+                            replyCount: p.replyCount + 1,  // 更新回复数量
+                            replies: [...p.replies, { content: post.replyContent }]  // 假设你可以这样更新回复列表
+                        };
+                    }
+                    return p;
+                });
+                setPosts(updatedPosts);  // 更新帖子列表
             } else {
                 alert("Failed to post reply.");
             }
