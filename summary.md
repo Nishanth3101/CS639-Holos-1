@@ -25,7 +25,8 @@ Initiated the integration of external GPT capabilities into our project, aiming 
 ## Nishanth Naik
 - Before March 18th: Focused primarily on what models we could use for our Unity project. Worked with Saksham to explore models and scenes. Worked on splitting of the models to make them their own individual parts. Tested with Saksham on how it would look in our enviornment.
 - After 18th March: Finding resources and reading packages to figure out the best way to Grab objects. Provided Saksham with the resources on which package to use to try to have the objects being Grabbable.
--From April 8th going to start working on the backend to get prompts and questions up to enhance the learning experience and interactivity.
+- From April 8th: Going to start working on the backend to get prompts and questions up to enhance the learning experience and interactivity.
+- Integrated ChatGPT into our Unity project where users can ask any questions to ChatGPT using voice and gets the answer back in the VR enviornment in the form of text.
 
 ## Yuyang Liu
 - Before March 18: Modeled the ward scene, created a basic hospital low profile and hospital exterior scene build and exported it as a unity file. Used the model created by Jordan and Nishanth for the scene.
