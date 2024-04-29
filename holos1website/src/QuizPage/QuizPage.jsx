@@ -19,22 +19,33 @@ const QuestionBank = () => {
   );
 };
 
-const BasicQuiz = ({ title }) => {
+const BasicQuiz = ({ title, onClick }) => {
   return (
-    <div className="basic-quiz">
+    <button onClick={onClick} className="basic-quiz">
       <div className="quiz-title">{title}</div>
-    </div>
+    </button>
   );
 };
 
 const BasicQuizzes = () => {
-  const quizTitles = ['Bones', 'Skeletal and Muscular System', 'Terminology', 'One More'];
+  const navigate = useNavigate();
+  const quizTitles = [
+    { title: 'Bones', path: '/quiz-bones' },
+    { title: 'Skeletal and Muscular System', path: '/quiz-skeletal' },
+    { title: 'Terminology', path: '/quiz-terminology' },
+    { title: 'One More', path: '/quiz-one-more' }  // 假设你有一个额外的路径
+  ];
+
+  const handleNavigate = (path) => {
+    navigate(path);
+  };
+
   return (
     <div className="basic-quizzes">
       <h1>Basic Quizzes</h1>
       <div className="basic-quizzes-container">
-        {quizTitles.map((title, index) => (
-          <BasicQuiz key={index} title={title} />
+        {quizTitles.map((quiz, index) => (
+          <BasicQuiz key={index} title={quiz.title} onClick={() => handleNavigate(quiz.path)} />
         ))}
       </div>
     </div>
