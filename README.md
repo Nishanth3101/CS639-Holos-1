@@ -117,20 +117,20 @@ To integrate AWS API with your project, follow these steps:
 
 2. **Configure your environment**:
    Store your AWS credentials securely in your environment variables or use AWS SDKs to configure them programmatically. For example, you can set them in your `.env` file:
-   ```bash
+```bash
 AWS_ACCESS_KEY_ID=your_access_key_id
 AWS_SECRET_ACCESS_KEY=your_secret_access_key
 ```
 
 3. **Install AWS SDK**:
    If your project requires direct interaction with AWS services, install the AWS SDK for JavaScript:
-   ```bash
+ ```bash
 npm install aws-sdk
 ```
 
 4. **Use AWS SDK**:
    Import the AWS SDK in your project and use it to interact with AWS services as needed.
-   ```javascript
+```javascript
 const AWS = require('aws-sdk');
 AWS.config.update({region: 'us-east-1'});
 const lambda = new AWS.Lambda();
@@ -138,7 +138,7 @@ const lambda = new AWS.Lambda();
 
 5. **Invoke AWS services**:
    You can now use the configured client to invoke AWS services. For example, to invoke a Lambda function:
-   ```javascript
+```javascript
 lambda.invoke({FunctionName: 'your_lambda_function_name', Payload: JSON.stringify({key: 'value'})}, (error, data) => {
    if (error) {
        console.error(error);
