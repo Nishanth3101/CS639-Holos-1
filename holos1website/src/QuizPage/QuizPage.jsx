@@ -33,9 +33,9 @@ const BasicQuizzes = () => {
     { title: 'Bones', path: '/quiz-bones' },
     { title: 'Skeletal and Muscular System', path: '/quiz-skeletal' },
     { title: 'Terminology', path: '/quiz-terminology' },
-    { title: 'One More', path: '/quiz-one-more' }  // 假设你有一个额外的路径
+    { title: 'Cardiovascular System', path: '/quiz-cardiovascular' }  
   ];
-
+  
   const handleNavigate = (path) => {
     navigate(path);
   };
