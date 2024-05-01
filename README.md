@@ -37,3 +37,56 @@ Here is an example of what your auth.json file should look like:
 }
 
 For more information you can visit this repository https://github.com/srcnalt/OpenAI-Unity?tab=readme-ov-file
+
+# How does ChatGPTManager.cs works.
+
+-Class and Event Definition
+
+ChatGPTManager: This is the main class that manages interactions with the OpenAI API.
+
+OnResponseEvent: A custom Unity event that takes a single string parameter. It's used to trigger actions when a response from the chat model is received.
+Fields
+
+OnResponse: An instance of OnResponseEvent which other components can subscribe to in order to react when the chat model produces a response.
+
+openAI: An instance of OpenAIApi, which is presumably a class responsible for handling API requests to OpenAI.
+
+messages: A list of ChatMessage objects, representing the conversation history. ChatMessage seems to be a custom class which isn't defined here but likely stores message content and the role of the message sender (user or AI).
+
+-Methods
+
+AskChatGPT(string newText): This method is called to send a new text message to the chat model.
+It first creates a new ChatMessage for the user's input and adds it to the messages list.
+A new CreateChatCompletionRequest object is constructed with the current conversation history. This request is then sent to the chat model specified (gpt-4).
+The response from the API is checked to ensure it contains valid data. The first response message is then added to the conversation history and logged in the Unity console. The content of the response is also passed to any subscribers of the OnResponse event.
+
+Start(): A Unity lifecycle method called before the first frame update. It's empty here, indicating no initialization behavior is needed at the start.
+
+Update(): Another Unity lifecycle method called once per frame. It's also empty, indicating no per-frame behavior is necessary.
+
+-Key Aspects of the Code
+
+Asynchronous Communication: The AskChatGPT method is asynchronous (marked with async), which allows the Unity application to remain responsive while waiting for the network response from OpenAI's servers.
+
+Event Handling: The use of UnityEvent allows other parts of the Unity application to react to chat responses without tightly coupling components, following an event-driven architecture.
+
+Debugging and Feedback: The Debug.Log call in AskChatGPT helps in logging the response for debugging purposes.
+
+# What works in the project
+- The skeleton can be interacted with the press of the buttons or just by using your hands in the VR enviornment.
+- Asking questions to ChatGPT with voice from the Meta Quest.
+- Uploading questions to the online forum through voice.
+- The skeleton can be set back to its original position on the press of a button.
+- In the website there are multiple quizs which can be taken to test your knowledge.
+
+# What doesnt works
+- Changing of voice for text to speech doesnt works.
+
+# What would we work on next
+- Adding text fields to the skeleton showing the parts of the skeleton.
+- Miniming and zooming of the parts of the skeleton on grabbing them.
+- Interactive human modelled bot in the enviornment to make the enviornment more imperssive.
+- Interactive quiz modules in the VR enviornment which will be called from the website by using voice.
+
+
+
