@@ -72,7 +72,7 @@ Event Handling: The use of UnityEvent allows other parts of the Unity applicatio
 
 Debugging and Feedback: The Debug.Log call in AskChatGPT helps in logging the response for debugging purposes.
 
-#### Website Setup for Holos Team 1
+# Website Setup for Holos Team 1
 
 To set up the website for the Holos project, follow these steps:
 
@@ -108,6 +108,47 @@ This will create a production-ready build of the website in the build folder.
    Please refer to their documentation for specific instructions.
 
    Here is our website https://holos1med.com/
+#### Connecting to AWS API
+
+To integrate AWS API with your project, follow these steps:
+
+1. **Set up AWS credentials**:
+   Ensure you have an AWS account and have access to the AWS Management Console. Create an IAM user with appropriate permissions and generate access keys (Access Key ID and Secret Access Key).
+
+2. **Configure your environment**:
+   Store your AWS credentials securely in your environment variables or use AWS SDKs to configure them programmatically. For example, you can set them in your `.env` file:
+   ```bash
+AWS_ACCESS_KEY_ID=your_access_key_id
+AWS_SECRET_ACCESS_KEY=your_secret_access_key
+```
+
+3. **Install AWS SDK**:
+   If your project requires direct interaction with AWS services, install the AWS SDK for JavaScript:
+   ```bash
+npm install aws-sdk
+```
+
+4. **Use AWS SDK**:
+   Import the AWS SDK in your project and use it to interact with AWS services as needed.
+   ```javascript
+const AWS = require('aws-sdk');
+AWS.config.update({region: 'us-east-1'});
+const lambda = new AWS.Lambda();
+```
+
+5. **Invoke AWS services**:
+   You can now use the configured client to invoke AWS services. For example, to invoke a Lambda function:
+   ```javascript
+lambda.invoke({FunctionName: 'your_lambda_function_name', Payload: JSON.stringify({key: 'value'})}, (error, data) => {
+   if (error) {
+       console.error(error);
+   } else {
+       console.log(data);
+   }
+});
+```
+
+These steps will help you connect and interact with AWS APIs from your project, enabling you to leverage the vast array of services provided by AWS.
 
 # What works in the project
 - The skeleton can be interacted with the press of the buttons or just by using your hands in the VR enviornment.
