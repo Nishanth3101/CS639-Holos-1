@@ -72,6 +72,43 @@ Event Handling: The use of UnityEvent allows other parts of the Unity applicatio
 
 Debugging and Feedback: The Debug.Log call in AskChatGPT helps in logging the response for debugging purposes.
 
+#### Website Setup for Holos Team 1
+
+To set up the website for the Holos project, follow these steps:
+
+1. **Navigate to the project directory**:
+```bash
+cd holos1website
+```
+
+2. **Install dependencies**:
+   Before running the website locally or building it for deployment, you need to install the necessary dependencies.
+   Run the following command to install all the dependencies:
+```bash
+npm install
+```
+
+3. **Run the website locally**:
+   To run the website locally, use the following command:
+```bash
+npm run dev
+```
+This will start the website on your local machine at http://localhost:3000.
+
+4. **Build the website for deployment**:
+   To build the website for deployment, use the following command:
+```bash
+npm run build
+```
+This will create a production-ready build of the website in the build folder.
+
+5. **Deploy the website**:
+   To deploy the website, you can use any hosting platform of your choice.
+   For example, you can use Vercel or Netlify to deploy the website.
+   Please refer to their documentation for specific instructions.
+
+   Here is our website https://holos1med.com/
+
 # What works in the project
 - The skeleton can be interacted with the press of the buttons or just by using your hands in the VR enviornment.
 - Asking questions to ChatGPT with voice from the Meta Quest.
