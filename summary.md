@@ -25,7 +25,11 @@
 - After March 18th: Worked on 3D room created by Saksham and Weibing to get interactable skeleton to work. Experimented with virtual hands, as well as different methods. Eventually, my teammates switched to a different VR method, away from XR to OXR. Continuously tested functionality to test if it was working correctly.
 - From April 8th: Focusing on implementing talking function and integrating OpenAI into that.
 - Implemented voice recognition and combined it with Nishanth's OpenAI request to get a response from AI.
-- Implemented text-to-speech functionality (working out bugs still) that will automatically take AI response and use whisperGPT to convert the text response to an audio file. This audio clip then automatically gets played.
+- Implemented text-to-speech functionality (working out bugs still) that will automatically take AI response and use whisperGPT to convert the text response to an audio file. This audio clip then automatically gets played. This functionality was eventually replaced with a more efficient one, Wit.AI.
+- Implemented functionality to stop the AI voice response, instead of pausing and playing it. Also reworking open ai code slightly to be more efficient and worked out some bugs.
+- Implemented the POST request from the VR environment to the website forum with Weibing and Saksham, so that you can speak a discussion post and it posts it to the forum.
+- Tried to fix bugs for deployment to Metaquest but was unsuccessful.
+- Formatted, using CSS and Javascript in React, some components of the website like the About Us page and the Quiz Page. Layout and styling was not consitent so I fixed it.
 
 ## Nishanth Naik
 - Before March 18th: Focused primarily on what models we could use for our Unity project. Worked with Saksham to explore models and scenes. Worked on splitting of the models to make them their own individual parts. Tested with Saksham on how it would look in our enviornment.
