@@ -36,6 +36,8 @@
 - After 18th March: Finding resources and reading packages to figure out the best way to Grab objects. Provided Saksham with the resources on which package to use to try to have the objects being Grabbable.
 - From April 8th: Going to start working on the backend to get prompts and questions up to enhance the learning experience and interactivity.
 - Integrated ChatGPT into our Unity project where users can ask any questions to ChatGPT using voice and gets the answer back in the VR enviornment in the form of text.
+- Looked into the possibility of making an auto adjustable text box for our text to be displayed but it did not work as expected.
+- Looked into the feature of making scrollable text box but was unsuccessful.
 
 ## Yuyang Liu
 - Before March 18: Modeled the ward scene, created a basic hospital low profile and hospital exterior scene build and exported it as a unity file. Used the model created by Jordan and Nishanth for the scene.
